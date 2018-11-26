@@ -8,32 +8,27 @@ import './App.css';
 
 class App extends Component {
     render() {
-        const { user, page, setYearAction } = this.props;
+        const { user, page, setYear } = this.props;
         return (
             <div className="App">
                 <header className="App-header">
                     <h1 className="App-title">Мой топ фото</h1>
                 </header>
                 <User name={user.name} />
-                <Page photos={page.photos} year={page.year} setYear={setYearAction}/>
+                <Page photos={page.photos} year={page.year} setYear={setYear}/>
             </div>
         )
     }
 }
 
-// приклеиваем данные из store
-const mapStateToProps = store => {
-    return {
-        user: store.user,
-        page: store.page,
-    }
-};
+const mapStateToProps = store => ({
+    user: store.user,
+    page: store.page,
+});
 
-const mapDispatchToProps = dispatch => {
-    return {
-        setYearAction: year => dispatch(setYear(year))
-    }
-};
+const mapDispatchToProps = dispatch => ({
+    setYear: year => dispatch(setYear(year))
+});
 
 // в наш компонент App, с помощью connect(mapStateToProps)
 export default connect(mapStateToProps, mapDispatchToProps)(App);
