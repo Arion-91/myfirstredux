@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 
 export class Page extends React.Component {
     onBtnClick = e => {
-        const year = +e.currentTarget.innerText
+        const year = +e.currentTarget.innerText;
         this.props.setYear(year)
     };
 
     render() {
-        const { year, photos } = this.props
+        const { year, photos } = this.props;
         return (
             <div>
                 <div>
