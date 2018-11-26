@@ -10,9 +10,9 @@ class App extends Component {
     render() {
         const { user, page, setYear } = this.props;
         return (
-            <div className="App">
-                <header className="App-header">
-                    <h1 className="App-title">Мой топ фото</h1>
+            <div className="app">
+                <header className="app-header">
+                    <h1 className="app-title">Мой топ фото</h1>
                 </header>
                 <User name={user.name} />
                 <Page photos={page.photos} year={page.year} setYear={setYear}/>

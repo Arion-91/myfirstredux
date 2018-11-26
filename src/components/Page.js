@@ -10,15 +10,15 @@ export class Page extends React.Component {
     render() {
         const { year, photos } = this.props;
         return (
-            <div>
+            <div className='page'>
                 <div>
-                    <button onClick={this.onBtnClick}>2018</button>
-                    <button onClick={this.onBtnClick}>2017</button>
-                    <button onClick={this.onBtnClick}>2016</button>
-                    <button onClick={this.onBtnClick}>2015</button>
-                    <button onClick={this.onBtnClick}>2014</button>
+                    <button className='btn' onClick={this.onBtnClick}>2018</button>
+                    <button className='btn' onClick={this.onBtnClick}>2017</button>
+                    <button className='btn' onClick={this.onBtnClick}>2016</button>
+                    <button className='btn' onClick={this.onBtnClick}>2015</button>
+                    <button className='btn' onClick={this.onBtnClick}>2014</button>
                 </div>
-                <p>
+                <p className='ib'>
                     У тебя {photos.length} фото за {year} год
                 </p>
             </div>
