@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 export class User extends React.Component {
     renderTemplate = () => {
@@ -17,9 +18,7 @@ export class User extends React.Component {
             return <p>Привет, {name}!</p>
         } else {
             return (
-                <button className="btn" onClick={this.props.handleLogin}>
-                    Войти
-                </button>
+                <Button value="Войти" onClick={this.props.handleLogin}/>
             )
         }
     };
