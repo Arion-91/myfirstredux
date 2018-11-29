@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 
 export class Page extends React.Component {
     onBtnClick = e => {
-        const year = +e.currentTarget.innerText
+        const year = +e.currentTarget.innerText;
         this.props.getPhotos(year) // setYear -> getPhotos
-    }
+    };
+
     renderTemplate = () => {
-        const { photos, isFetching, error } = this.props
+        const { photos, isFetching, error } = this.props;
 
         if (error) {
             return <p className="error">Во время загрузки фото произошла ошибка</p>
@@ -25,10 +26,10 @@ export class Page extends React.Component {
                 </div>
             ))
         }
-    }
+    };
 
     render() {
-        const { year, photos } = this.props
+        const { year, photos } = this.props;
         return (
             <div className="ib page">
                 <p>
@@ -63,4 +64,4 @@ Page.propTypes = {
     getPhotos: PropTypes.func.isRequired,
     error: PropTypes.string,
     isFetching: PropTypes.bool.isRequired,
-}
+};
