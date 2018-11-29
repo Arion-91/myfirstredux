@@ -34,7 +34,7 @@ export class Page extends React.Component {
         return (
             <div className="ib page">
                 <p>
-                    {years.map(year => <Button key={year} value={year} onClick={this.onBtnClick}/>)};
+                    {years.map(year => <Button key={year} value={year} onClick={this.onBtnClick}/>)}
                 </p>
                 <h3>
                     {year} год [{photos.length}]

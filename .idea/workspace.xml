@@ -98,10 +98,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP-XAMPP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="122" />
-    <option name="y" value="71" />
+    <option name="x" value="304" />
+    <option name="y" value="198" />
     <option name="width" value="1317" />
-    <option name="height" value="811" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -168,6 +168,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
