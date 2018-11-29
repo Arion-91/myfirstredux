@@ -1,5 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Button from './Button';
 
 export class Page extends React.Component {
     onBtnClick = e => {
@@ -33,21 +34,7 @@ export class Page extends React.Component {
         return (
             <div className="ib page">
                 <p>
-                    <button className="btn" onClick={this.onBtnClick}>
-                        2018
-                    </button>{' '}
-                    <button className="btn" onClick={this.onBtnClick}>
-                        2017
-                    </button>{' '}
-                    <button className="btn" onClick={this.onBtnClick}>
-                        2016
-                    </button>{' '}
-                    <button className="btn" onClick={this.onBtnClick}>
-                        2015
-                    </button>{' '}
-                    <button className="btn" onClick={this.onBtnClick}>
-                        2014
-                    </button>
+                    {years.map(year => <Button value={year} onClick={this.onBtnClick}/>)};
                 </p>
                 <h3>
                     {year} год [{photos.length}]
@@ -65,3 +52,11 @@ Page.propTypes = {
     error: PropTypes.string,
     isFetching: PropTypes.bool.isRequired,
 };
+
+const years = [
+    2018,
+    2017,
+    2016,
+    2015,
+    2014
+];

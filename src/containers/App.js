@@ -19,7 +19,6 @@ class App extends Component {
                     error={page.error}
                     getPhotos={getPhotos}
                 />
-                {/* добавили новые props для User */}
                 <User
                     name={user.name}
                     isFetching={user.isFetching}
