@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Page} from "./Page";
 
 export default class Button extends Component {
     render() {
@@ -13,7 +12,7 @@ export default class Button extends Component {
     }
 }
 
-Page.propTypes = {
-    value: PropTypes.string.isRequired,
+Button.propTypes = {
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     onClick: PropTypes.func.isRequired,
 };

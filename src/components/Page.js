@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from './Button';
+import Button from '../components/Button';
 
 export class Page extends React.Component {
     onBtnClick = e => {
@@ -34,7 +34,7 @@ export class Page extends React.Component {
         return (
             <div className="ib page">
                 <p>
-                    {years.map(year => <Button value={year} onClick={this.onBtnClick}/>)};
+                    {years.map(year => <Button key={year} value={year} onClick={this.onBtnClick}/>)};
                 </p>
                 <h3>
                     {year} год [{photos.length}]
